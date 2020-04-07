@@ -10,13 +10,13 @@
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1"
   },
-  "homepage": "http://PadamSandhu.github.io/material-ui-grid-application",
+  "homepage": "https://padamsandhu.github.io/material-ui-grid-application/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "gh-pages -d build"
+    "deploy": "npm run build && gh-pages -d build"
 
   },
   "eslintConfig": {

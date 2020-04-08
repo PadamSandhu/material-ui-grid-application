@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/material-ui-grid-application/static/css/main.5f361e03.chunk.css",
-    "main.js": "/material-ui-grid-application/static/js/main.2678d268.chunk.js",
-    "main.js.map": "/material-ui-grid-application/static/js/main.2678d268.chunk.js.map",
-    "runtime-main.js": "/material-ui-grid-application/static/js/runtime-main.ea1e8204.js",
-    "runtime-main.js.map": "/material-ui-grid-application/static/js/runtime-main.ea1e8204.js.map",
-    "static/js/2.202e0fbb.chunk.js": "/material-ui-grid-application/static/js/2.202e0fbb.chunk.js",
-    "static/js/2.202e0fbb.chunk.js.map": "/material-ui-grid-application/static/js/2.202e0fbb.chunk.js.map",
+    "main.js": "/material-ui-grid-application/static/js/main.72843c25.chunk.js",
+    "main.js.map": "/material-ui-grid-application/static/js/main.72843c25.chunk.js.map",
+    "runtime-main.js": "/material-ui-grid-application/static/js/runtime-main.51b3e175.js",
+    "runtime-main.js.map": "/material-ui-grid-application/static/js/runtime-main.51b3e175.js.map",
+    "static/js/2.e4c229da.chunk.js": "/material-ui-grid-application/static/js/2.e4c229da.chunk.js",
+    "static/js/2.e4c229da.chunk.js.map": "/material-ui-grid-application/static/js/2.e4c229da.chunk.js.map",
     "index.html": "/material-ui-grid-application/index.html",
-    "precache-manifest.857c6d877688bb6108209e61e3966386.js": "/material-ui-grid-application/precache-manifest.857c6d877688bb6108209e61e3966386.js",
+    "precache-manifest.d2e1269849d97de42f8cf702f5018332.js": "/material-ui-grid-application/precache-manifest.d2e1269849d97de42f8cf702f5018332.js",
     "service-worker.js": "/material-ui-grid-application/service-worker.js",
     "static/css/main.5f361e03.chunk.css.map": "/material-ui-grid-application/static/css/main.5f361e03.chunk.css.map",
-    "static/js/2.202e0fbb.chunk.js.LICENSE.txt": "/material-ui-grid-application/static/js/2.202e0fbb.chunk.js.LICENSE.txt"
+    "static/js/2.e4c229da.chunk.js.LICENSE.txt": "/material-ui-grid-application/static/js/2.e4c229da.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.ea1e8204.js",
-    "static/js/2.202e0fbb.chunk.js",
+    "static/js/runtime-main.51b3e175.js",
+    "static/js/2.e4c229da.chunk.js",
     "static/css/main.5f361e03.chunk.css",
-    "static/js/main.2678d268.chunk.js"
+    "static/js/main.72843c25.chunk.js"
   ]
 }

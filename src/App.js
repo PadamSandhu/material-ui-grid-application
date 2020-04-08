@@ -1,7 +1,8 @@
 import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 import './App.css';
-import { AppGrid } from './components/grid';
+import { AppGrid } from './components/sample-test-code/grid';
+import { CardPage } from './components/paypal-example';
 
 class App extends React.Component {
   state = {
@@ -18,7 +19,8 @@ class App extends React.Component {
     ) : (
       <div className="Grid-App">
         <BrowserRouter>
-          <Route path="/" component={AppGrid} />
+          <Route path="/grid" component={AppGrid} />
+          <Route path="/" component={CardPage} />
         </BrowserRouter>
       </div>
     );

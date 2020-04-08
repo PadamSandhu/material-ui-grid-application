@@ -12,6 +12,7 @@ export const AppGrid = () => {
         direction="row"
         justify="flex-start"
         alignItems="flex-start"
+        spacing={10}
       >
         <Grid item>
           <HorizonatalCard1 />
@@ -25,7 +26,7 @@ export const AppGrid = () => {
           <SimpleCard />
         </Grid>
       </Grid>
-      <Grid container>
+      {/* <Grid container>
         <Grid item>
           <HorizonatalCard1 />
         </Grid>
@@ -35,7 +36,7 @@ export const AppGrid = () => {
         <Grid item>
           <SimpleCard />
         </Grid>
-      </Grid>
+      </Grid> */}
       <ComplexCard />
     </div>
   );

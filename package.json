@@ -10,7 +10,9 @@
     "@testing-library/user-event": "^7.2.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1",
+    "single-spa-react": "^2.13.0",
     "typeface-roboto": "0.0.75"
   },
   "homepage": "https://padamsandhu.github.io/material-ui-grid-application/",
@@ -19,7 +21,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "npm run build && gh-pages -d build"
+    "deploy": "npm run build && gh-pages -d build",
+    "build:bundle": "webpack --config webpack.config.js",
+    "build:single": "npx ./scripts/build.js"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -37,6 +41,11 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^2.2.0"
+    "gh-pages": "^2.2.0",
+    "glob": "^7.1.6",
+    "path": "^0.12.7",
+    "rewire": "^5.0.0",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack-cli": "^3.3.11"
   }
 }

@@ -8,8 +8,8 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     background: '#E0FFFF',
-    // padding: '24px',
-    overflow: 'hidden', /// This is hacky to account for childs extra padding applied by material UI spacing props.
+    padding: '40px', // One possible fix for the spacing props is to have padding on partent equal or more than child's padding. (This will change based on Parent Grid width)
+    // overflow: 'hidden', /// This is hacky to account for childs extra padding applied by material UI spacing props. (Another easy fix)
   },
 }));
 

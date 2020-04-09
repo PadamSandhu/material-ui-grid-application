@@ -34,7 +34,13 @@ export const CardHeader3 = ({ cardNo }) => {
           )}
         </Grid>
         <Grid xs item>
-          <Typography variant="subtitle1" gutterBottom>
+          <Typography
+            style={{
+              paddingTop: '10px',
+            }}
+            variant="subtitle1"
+            gutterBottom
+          >
             <strong>
               {cardNo === 1
                 ? 'The support you need when you need it'

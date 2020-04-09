@@ -22,7 +22,13 @@ export const CardHeader4 = () => {
     <div className={classes.card4}>
       <Grid container spacing={1}>
         <Grid xs item>
-          <Typography variant="subtitle1" gutterBottom>
+          <Typography
+            style={{
+              paddingTop: '10px',
+            }}
+            variant="subtitle1"
+            gutterBottom
+          >
             <strong>Tell us what you think</strong>
           </Typography>
         </Grid>

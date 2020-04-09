@@ -17,7 +17,12 @@ export const CardHeader1 = () => {
   return (
     <div className={classes.card1}>
       <Grid container spacing={2}>
-        <Grid item>
+        <Grid
+          style={{
+            paddingTop: '10px',
+          }}
+          item
+        >
           <Typography variant="subtitle2">
             <strong>Money</strong>
           </Typography>

@@ -24,7 +24,13 @@ export const CardHeader2 = () => {
           <AccountCircleIcon className={classes.largeIcon} color="primary" />
         </Grid>
         <Grid xs item>
-          <Typography variant="subtitle1" gutterBottom>
+          <Typography
+            style={{
+              paddingTop: '10px',
+            }}
+            variant="subtitle1"
+            gutterBottom
+          >
             <strong>Get paid fast</strong>
           </Typography>
           <Typography variant="body1" gutterBottom>

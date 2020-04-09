@@ -5,6 +5,7 @@ import { Typography } from '@material-ui/core';
 import ButtonGroup from '@material-ui/core/ButtonGroup';
 import Link from '@material-ui/core/Link';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
+import { LinkButton } from '../../buttons';
 
 const useStyles = makeStyles((theme) => ({
   card1: {
@@ -25,7 +26,7 @@ export const CardHeader1 = () => {
           <Typography variant="subtitle2">Money</Typography>
         </Grid>
         <Grid xs item>
-          <Typography variant="subtitle2" align="right">
+          {/* <Typography variant="subtitle2" align="right">
             <Link
               component="button"
               variant="subtitle2"
@@ -38,7 +39,8 @@ export const CardHeader1 = () => {
                 <ArrowForwardIosIcon fontSize="inherit" />
               </span>
             </Link>
-          </Typography>
+          </Typography> */}
+          <LinkButton />
         </Grid>
       </Grid>
     </div>

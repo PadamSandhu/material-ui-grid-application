@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from '@material-ui/core/Link';
 
-export const LinkButton2 = () => {
+export const LinkButton2 = ({ text = '' }) => {
   return (
     <Link
       component="button"
@@ -10,7 +10,7 @@ export const LinkButton2 = () => {
         console.info("I'm a button.");
       }}
     >
-      <strong>Provide Feedback</strong>
+      <strong>{text}</strong>
     </Link>
   );
 };

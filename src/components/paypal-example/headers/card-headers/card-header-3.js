@@ -4,14 +4,12 @@ import { makeStyles } from '@material-ui/core/styles';
 import { Typography } from '@material-ui/core';
 import IconButton from '@material-ui/core/IconButton';
 
-import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
+import FavoriteIcon from '@material-ui/icons/Favorite';
+import NoteAddIcon from '@material-ui/icons/NoteAdd';
 
 const useStyles = makeStyles((theme) => ({
   card3: {
-    // flexGrow: 1,
-    background: 'Pink',
-    padding: '0px',
     overflow: 'hidden',
   },
   largeIcon: {
@@ -22,18 +20,26 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export const CardHeader3 = () => {
+export const CardHeader3 = ({ cardNo }) => {
   const classes = useStyles();
 
   return (
     <div className={classes.card3}>
       <Grid container spacing={1}>
         <Grid item>
-          <AccountCircleIcon className={classes.largeIcon} color="primary" />
+          {cardNo === 1 ? (
+            <FavoriteIcon className={classes.largeIcon} color="secondary" />
+          ) : (
+            <NoteAddIcon className={classes.largeIcon} htmlColor="green" />
+          )}
         </Grid>
         <Grid xs item>
           <Typography variant="subtitle1" gutterBottom>
-            <strong>The support you need when you need it</strong>
+            <strong>
+              {cardNo === 1
+                ? 'The support you need when you need it'
+                : 'Tax documents and other reports'}
+            </strong>
           </Typography>
         </Grid>
         <Grid xs={1} item>

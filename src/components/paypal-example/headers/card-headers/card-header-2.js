@@ -7,9 +7,6 @@ import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 
 const useStyles = makeStyles((theme) => ({
   card2: {
-    // flexGrow: 1,
-    background: '#A0FFBB',
-    padding: '0px',
     overflow: 'hidden',
   },
   largeIcon: {

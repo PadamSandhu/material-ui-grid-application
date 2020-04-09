@@ -5,8 +5,9 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
   button: {
-    textTransform: 'capitalize',
+    textTransform: 'none',
     float: 'right',
+    color: 'blue',
   },
 }));
 
@@ -18,7 +19,7 @@ export const LinkButton = () => {
       className={classes.button}
       endIcon={<ArrowForwardIosIcon fontSize="inherit" />}
     >
-      Send
+      <strong>Send</strong>
     </Button>
   );
 };

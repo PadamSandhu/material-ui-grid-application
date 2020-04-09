@@ -21,18 +21,18 @@ export const CardPage = () => {
       <Grid container spacing={4}>
         <Grid item xs={12} md={3}>
           <Grid container spacing={7} direction="column">
-            {[...Array(2)].map((x) => (
-              <Grid item>
-                <VerticalCard />
+            {[...Array(2)].map((x, index) => (
+              <Grid key={index + 1} item>
+                <VerticalCard cardNo={index + 1} />
               </Grid>
             ))}
           </Grid>
         </Grid>
         <Grid item xs={12} md={9}>
           <Grid container spacing={4} direction="column">
-            {[...Array(3)].map((x) => (
-              <Grid item>
-                <HorizonatalCard />
+            {[...Array(3)].map((x, index) => (
+              <Grid key={index + 1} item>
+                <HorizonatalCard cardNo={index + 1} />
               </Grid>
             ))}
           </Grid>

@@ -7,9 +7,6 @@ import { LinkButton } from '../../buttons';
 
 const useStyles = makeStyles((theme) => ({
   card1: {
-    // flexGrow: 1,
-    background: '#A0FFFF',
-    padding: '0px',
     overflow: 'hidden',
   },
 }));
@@ -21,7 +18,9 @@ export const CardHeader1 = () => {
     <div className={classes.card1}>
       <Grid container spacing={2}>
         <Grid item>
-          <Typography variant="subtitle2">Money</Typography>
+          <Typography variant="subtitle2">
+            <strong>Money</strong>
+          </Typography>
         </Grid>
         <Grid xs item>
           <LinkButton />

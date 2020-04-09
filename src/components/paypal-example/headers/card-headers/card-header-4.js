@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
   card4: {
     flexGrow: 1,
     background: '#B0FGKM',
-    padding: '5px',
+    padding: '0px',
     overflow: 'hidden',
   },
   button: {
@@ -26,7 +26,7 @@ export const CardHeader4 = () => {
       <Grid container spacing={1}>
         <Grid xs item>
           <Typography variant="subtitle1" gutterBottom>
-            <strong>The support you need when you need it</strong>
+            <strong>Tell us what you think</strong>
           </Typography>
         </Grid>
         <Grid xs={1} item>

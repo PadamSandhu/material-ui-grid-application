@@ -3,7 +3,7 @@ import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 import { Typography } from '@material-ui/core';
 
-import { LinkButton } from '../../buttons';
+import { RoundButton } from '../../buttons';
 
 const useStyles = makeStyles((theme) => ({
   card1: {
@@ -14,18 +14,13 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export const CardHeader1 = () => {
+export const CardFooter1 = () => {
   const classes = useStyles();
 
   return (
     <div className={classes.card1}>
-      <Grid container spacing={2}>
-        <Grid item>
-          <Typography variant="subtitle2">Money</Typography>
-        </Grid>
-        <Grid xs item>
-          <LinkButton />
-        </Grid>
+      <Grid container justify="center">
+        <RoundButton />
       </Grid>
     </div>
   );

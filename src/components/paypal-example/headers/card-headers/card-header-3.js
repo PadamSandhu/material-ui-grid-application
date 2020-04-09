@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
   card3: {
     flexGrow: 1,
     background: 'Pink',
-    padding: '5px',
+    padding: '0px',
     overflow: 'hidden',
   },
   largeIcon: {

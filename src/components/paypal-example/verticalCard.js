@@ -1,8 +1,8 @@
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import React from 'react';
-import { CardHeader1 } from './headers';
-import { CardHeader2 } from './headers';
+
+import { CardHeader1, CardHeader2, CardHeader3, CardHeader4 } from './headers';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -21,6 +21,8 @@ export const VerticalCard = () => {
       <Paper className={classes.paper}>
         <CardHeader1 />
         <CardHeader2 />
+        <CardHeader3 />
+        <CardHeader4 />
       </Paper>
     </div>
   );

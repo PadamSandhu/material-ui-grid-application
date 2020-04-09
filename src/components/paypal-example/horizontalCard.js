@@ -11,6 +11,10 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     minHeight: '200px',
     color: theme.palette.text.secondary,
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'space-between',
+    padding: '15px',
   },
 }));
 
@@ -19,10 +23,10 @@ export const HorizonatalCard = () => {
   return (
     <div className={classes.root}>
       <Paper className={classes.paper}>
-        <CardHeader1 />
-        <CardHeader2 />
+        {/* <CardHeader1 />
+        <CardHeader2 /> */}
         <CardHeader3 />
-        <CardHeader4 />
+        {/* <CardHeader4 /> */}
         <CardFooter2 />
       </Paper>
     </div>

@@ -9,7 +9,7 @@ import MoreVertIcon from '@material-ui/icons/MoreVert';
 
 const useStyles = makeStyles((theme) => ({
   card3: {
-    flexGrow: 1,
+    // flexGrow: 1,
     background: 'Pink',
     padding: '0px',
     overflow: 'hidden',

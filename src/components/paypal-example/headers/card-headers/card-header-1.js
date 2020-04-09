@@ -7,7 +7,7 @@ import { LinkButton } from '../../buttons';
 
 const useStyles = makeStyles((theme) => ({
   card1: {
-    flexGrow: 1,
+    // flexGrow: 1,
     background: '#A0FFFF',
     padding: '0px',
     overflow: 'hidden',

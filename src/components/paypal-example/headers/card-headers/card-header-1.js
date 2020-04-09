@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) => ({
   card1: {
     flexGrow: 1,
     background: '#A0FFFF',
-    padding: '20px',
+    padding: '10px',
     overflow: 'hidden',
   },
 }));
@@ -19,8 +19,8 @@ export const CardHeader1 = () => {
 
   return (
     <div className={classes.card1}>
-      <Grid container>
-        <Grid xs={2} item>
+      <Grid container spacing={2}>
+        <Grid item>
           <Typography variant="subtitle2">Money</Typography>
         </Grid>
         <Grid xs item>

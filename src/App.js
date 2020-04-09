@@ -3,6 +3,7 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import './App.css';
 import { AppGrid } from './components/sample-test-code/grid';
 import { CardPage } from './components/paypal-example';
+import 'typeface-roboto';
 
 class App extends React.Component {
   state = {

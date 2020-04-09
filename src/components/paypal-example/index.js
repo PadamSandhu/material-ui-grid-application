@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     background: '#E0FFFF',
-    // padding: '40px', // One possible fix for the spacing props is to have padding on partent equal or more than child's padding. (This will change based on Parent Grid width)
+    padding: '20px', // One possible fix for the spacing props is to have padding on partent equal or more than child's padding. (This will change based on Parent Grid width)
     overflow: 'hidden', /// This is hacky to account for childs extra padding applied by material UI spacing props. (Another easy fix)
   },
 }));
@@ -18,9 +18,9 @@ export const CardPage = () => {
 
   return (
     <div className={classes.root}>
-      <Grid container spacing={3}>
+      <Grid container spacing={4}>
         <Grid item xs={12} md={3}>
-          <Grid container spacing={10} direction="column">
+          <Grid container spacing={7} direction="column">
             {[...Array(2)].map((x) => (
               <Grid item>
                 <VerticalCard />
@@ -29,7 +29,7 @@ export const CardPage = () => {
           </Grid>
         </Grid>
         <Grid item xs={12} md={9}>
-          <Grid container spacing={10} direction="column">
+          <Grid container spacing={4} direction="column">
             {[...Array(3)].map((x) => (
               <Grid item>
                 <HorizonatalCard />

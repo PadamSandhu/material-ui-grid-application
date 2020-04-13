@@ -8,14 +8,16 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
-    "d3": "^5.15.1",
+    "d3": "^4.13.0",
+    "d3-force": "^2.0.1",
     "d3-scale": "^3.2.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1",
     "single-spa-react": "^2.13.0",
-    "typeface-roboto": "0.0.75"
+    "typeface-roboto": "0.0.75",
+    "underscore": "^1.10.2"
   },
   "homepage": "https://padamsandhu.github.io/material-ui-grid-application/",
   "scripts": {

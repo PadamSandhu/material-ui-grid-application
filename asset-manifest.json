@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/material-ui-grid-application/static/css/main.5fd7c420.chunk.css",
-    "main.js": "/material-ui-grid-application/static/js/main.af2b4ad4.chunk.js",
-    "main.js.map": "/material-ui-grid-application/static/js/main.af2b4ad4.chunk.js.map",
+    "main.css": "/material-ui-grid-application/static/css/main.da75d839.chunk.css",
+    "main.js": "/material-ui-grid-application/static/js/main.7a121398.chunk.js",
+    "main.js.map": "/material-ui-grid-application/static/js/main.7a121398.chunk.js.map",
     "runtime-main.js": "/material-ui-grid-application/static/js/runtime-main.ea1e8204.js",
     "runtime-main.js.map": "/material-ui-grid-application/static/js/runtime-main.ea1e8204.js.map",
     "static/css/2.0b96b018.chunk.css": "/material-ui-grid-application/static/css/2.0b96b018.chunk.css",
-    "static/js/2.8c903676.chunk.js": "/material-ui-grid-application/static/js/2.8c903676.chunk.js",
-    "static/js/2.8c903676.chunk.js.map": "/material-ui-grid-application/static/js/2.8c903676.chunk.js.map",
+    "static/js/2.fe8da3fd.chunk.js": "/material-ui-grid-application/static/js/2.fe8da3fd.chunk.js",
+    "static/js/2.fe8da3fd.chunk.js.map": "/material-ui-grid-application/static/js/2.fe8da3fd.chunk.js.map",
     "index.html": "/material-ui-grid-application/index.html",
-    "precache-manifest.f4ad6633876dc7011052ea85faaac50b.js": "/material-ui-grid-application/precache-manifest.f4ad6633876dc7011052ea85faaac50b.js",
+    "precache-manifest.12d3daf9cd28ac5701c307a65c337f03.js": "/material-ui-grid-application/precache-manifest.12d3daf9cd28ac5701c307a65c337f03.js",
     "service-worker.js": "/material-ui-grid-application/service-worker.js",
     "static/css/2.0b96b018.chunk.css.map": "/material-ui-grid-application/static/css/2.0b96b018.chunk.css.map",
-    "static/css/main.5fd7c420.chunk.css.map": "/material-ui-grid-application/static/css/main.5fd7c420.chunk.css.map",
-    "static/js/2.8c903676.chunk.js.LICENSE.txt": "/material-ui-grid-application/static/js/2.8c903676.chunk.js.LICENSE.txt",
+    "static/css/main.da75d839.chunk.css.map": "/material-ui-grid-application/static/css/main.da75d839.chunk.css.map",
+    "static/js/2.fe8da3fd.chunk.js.LICENSE.txt": "/material-ui-grid-application/static/js/2.fe8da3fd.chunk.js.LICENSE.txt",
     "static/media/index.css": "/material-ui-grid-application/static/media/roboto-latin-900italic.ebf6d164.woff2"
   },
   "entrypoints": [
     "static/js/runtime-main.ea1e8204.js",
     "static/css/2.0b96b018.chunk.css",
-    "static/js/2.8c903676.chunk.js",
-    "static/css/main.5fd7c420.chunk.css",
-    "static/js/main.af2b4ad4.chunk.js"
+    "static/js/2.fe8da3fd.chunk.js",
+    "static/css/main.da75d839.chunk.css",
+    "static/js/main.7a121398.chunk.js"
   ]
 }

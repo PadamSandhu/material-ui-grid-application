@@ -20,7 +20,7 @@ export const AppGrid = () => {
         <Grid
           item
           style={{
-            'align-self': 'flex-end',
+            alignSelf: 'flex-end',
           }}
         >
           <SimpleCard />

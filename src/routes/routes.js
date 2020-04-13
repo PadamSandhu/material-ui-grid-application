@@ -18,7 +18,7 @@ export const Routes = [
   {
     path: '/D3-test',
     component: D3Test1,
-    data: { title: 'Heroes List' },
+    data: { title: 'D3 Example' },
   },
   {
     path: '',

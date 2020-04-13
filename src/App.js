@@ -1,9 +1,10 @@
 import React from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
-import { AppGrid } from './components/sample-test-code/grid';
-import { CardPage } from './components/paypal-example';
-import { D3Test1 } from './components/D3';
+import basename from './routes/basename';
+import history from './routes/createBrowserHis';
+import { Routes } from './routes/routes';
+
 import 'typeface-roboto';
 
 class App extends React.Component {
@@ -20,11 +21,13 @@ class App extends React.Component {
       <div>Error</div>
     ) : (
       <div className="Grid-App">
-        <BrowserRouter>
-          <Route exact path="/" component={CardPage} />
-          <Route path="/grid" component={AppGrid} />
-          <Route path="/D3-test" component={D3Test1} />
-        </BrowserRouter>
+        <Router basename={process.env.PUBLIC_URL || basename} history={history}>
+          <Switch>
+            {Routes.map((route) => (
+              <Route {...route} />
+            ))}
+          </Switch>
+        </Router>
       </div>
     );
   }

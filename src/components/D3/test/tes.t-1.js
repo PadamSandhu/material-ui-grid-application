@@ -1,5 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import * as d3 from 'd3';
+import { D3Chart1 } from './d3Chart1';
+import { D3Chart1SVG } from './d3Chart1-svg';
 
 export const D3Test1 = () => {
   const data = [1, 2, 3];
@@ -28,8 +30,21 @@ export const D3Test1 = () => {
       // Remove old D3 elements
       update.exit().remove();
     }
-  }, [d3Container]);
+  }, [d3Container, data]);
   return (
-    <svg className="d3-component" width={400} height={200} ref={d3Container} />
+    <>
+      <h2>Creating a SVG using D3</h2>
+      <svg
+        className="d3-component"
+        width={400}
+        height={200}
+        ref={d3Container}
+      />
+      <h2>Creating a chart using Div/Css</h2>
+      <D3Chart1 />
+
+      <h2>Creating a chart using SVG in D3</h2>
+      <D3Chart1SVG />
+    </>
   );
 };

@@ -1,0 +1,14 @@
+#chart1 {
+  width: 800px;
+  height: 400px;
+  background-color: #f7f7f7;
+  margin: 25px auto;
+}
+
+#chart1 .bar {
+  display: inline-block;
+  width: 25px;
+  /* height: 300px; */
+  background-color: #7ed26d;
+  margin-right: 5px;
+}

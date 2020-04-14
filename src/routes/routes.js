@@ -2,6 +2,7 @@ import React from 'react';
 import { AppGrid } from '../components/sample-test-code/grid';
 import { CardPage } from '../components/paypal-example';
 import { D3Test1 } from '../components/D3/test/tes.t-1';
+import { SimpleForceGraph, ForceReact } from '../components/D3';
 
 export const Routes = [
   {
@@ -19,6 +20,16 @@ export const Routes = [
     path: '/D3-test',
     component: D3Test1,
     data: { title: 'D3 Example' },
+  },
+  {
+    path: '/D3-simple-force',
+    component: SimpleForceGraph,
+    data: { title: 'D3 Simple Force SVG Graph' },
+  },
+  {
+    path: '/D3-simple-force-react',
+    component: ForceReact,
+    data: { title: 'D3 Simple Force React Graph' },
   },
   {
     path: '',

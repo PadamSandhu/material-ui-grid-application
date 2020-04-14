@@ -2,7 +2,6 @@ import React, { useRef, useEffect } from 'react';
 import * as d3 from 'd3';
 import { D3Chart1 } from './d3Chart1';
 import { D3Chart1SVG } from './d3Chart1-svg';
-import { SimpleForceGraph } from '../force';
 
 export const D3Test1 = () => {
   const data = [1, 2, 3];
@@ -46,11 +45,6 @@ export const D3Test1 = () => {
 
       <h2>Creating a chart using SVG in D3</h2>
       <D3Chart1SVG />
-      <h2>
-        Creating a focus chart using SVG and React Functional Hooks with D3
-      </h2>
-
-      <SimpleForceGraph />
     </>
   );
 };

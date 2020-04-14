@@ -4,10 +4,8 @@ import * as d3 from 'd3';
 import './force.css';
 
 export const SimpleForceGraph = ({
-  canvasWidth = window.innerWidth,
-  canvasHeight = window.innerHeight,
-  charge = -300,
-  linkDistance = 50,
+  canvasWidth = 700,
+  canvasHeight = 500,
   data = defaultData,
 }) => {
   const nodeMapRef = useRef(null); // Create a ref

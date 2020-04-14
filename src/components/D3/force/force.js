@@ -16,6 +16,24 @@ export const SimpleForceGraph = ({
     if (data && nodeMapRef.current) {
       // Create SVG element
 
+      const dragDrop = d3
+        .drag()
+        .on('start', function (node) {
+          node.fx = node.x;
+          node.fy = node.y;
+        })
+        .on('drag', function (node) {
+          simulation.alphaTarget(0.7).restart();
+          node.fx = d3.event.x;
+          node.fy = d3.event.y;
+        })
+        .on('end', function (node) {
+          if (!d3.event.active) {
+            simulation.alphaTarget(0);
+          }
+          node.fx = null;
+          node.fy = null;
+        });
       const svg = d3.select(nodeMapRef.current);
 
       // Select height and
@@ -55,7 +73,8 @@ export const SimpleForceGraph = ({
         .enter()
         .append('circle')
         .attr('r', 10)
-        .attr('fill', getNodeColor);
+        .attr('fill', getNodeColor)
+        .call(dragDrop);
 
       const textElements = svg
         .append('g')

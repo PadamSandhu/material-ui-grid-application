@@ -1,5 +1,8 @@
 import React, { useRef, useEffect, useState } from 'react';
+import Draggable from 'react-draggable';
+
 import { data as defaultData } from './data';
+
 import * as d3 from 'd3';
 import './force-react.css';
 
@@ -13,45 +16,78 @@ export const ForceReact = ({
   const [nodesState, setNodesState] = useState([...data.nodes]);
   const [linksState, setLinksState] = useState([...data.links]);
 
+  const [dragging, setDragging] = useState(false);
+
+  const linkForce = d3
+    .forceLink()
+    .id(function (link) {
+      return link.id;
+    })
+    .strength(function (link) {
+      return link.strength;
+    });
+
+  const simulation = d3
+    .forceSimulation()
+    .force('link', linkForce)
+    .force('charge', d3.forceManyBody().strength(-120))
+    .force('center', d3.forceCenter(canvasWidth / 2, canvasHeight / 2));
+
+  const simulationRef = useRef(simulation); // Create a ref
+
   useEffect(() => {
     if (data && nodeMapRef.current) {
-      // simulation setup with all forces
-      const linkForce = d3
-        .forceLink()
-        .id(function (link) {
-          return link.id;
-        })
-        .strength(function (link) {
-          return link.strength;
-        });
-
-      const simulation = d3
-        .forceSimulation()
-        .force('link', linkForce)
-        .force('charge', d3.forceManyBody().strength(-120))
-        .force('center', d3.forceCenter(canvasWidth / 2, canvasHeight / 2));
-
-      simulation.nodes(nodes).on('tick', () => {
+      simulationRef.current.nodes(nodes).on('tick', () => {
         setNodesState([...nodes]);
         setLinksState([...links]);
       });
 
-      simulation.tick(300);
-      simulation.force('link').links(links);
+      simulationRef.current.force('link').links(links);
     }
   }, []);
+
+  useEffect(() => {
+    const dragDrop = d3
+      .drag()
+      .on('start', function (node) {
+        node.fx = node.x;
+        node.fy = node.y;
+      })
+      .on('drag', function (node) {
+        simulationRef.current.alphaTarget(0.7).restart();
+        node.fx = d3.event.x;
+        node.fy = d3.event.y;
+      })
+      .on('end', function (node) {
+        if (!d3.event.active) {
+          simulationRef.current.alphaTarget(0);
+        }
+        node.fx = null;
+        node.fy = null;
+      });
+    d3.select('#react-graph')
+      .selectAll('circle')
+      .data(nodesState)
+      .call(dragDrop);
+  });
 
   const nodeElement = nodesState.map(
     (node, id) =>
       node.x && (
-        <g className="node" key={id}>
-          <circle r={10} cx={node.x} cy={node.y} />
+        <g className="React-Force-chart-node" key={id}>
+          <circle
+            className="React-Force-circle"
+            r={10}
+            cx={node.x}
+            cy={node.y}
+          />
           <text fontSize={15} x={node.x + 12} y={node.y + 5}>
             {node.label}
           </text>
         </g>
       )
   );
+
   const nodeLinks = linksState.map(
     (link, id) =>
       link.source &&
@@ -67,8 +103,14 @@ export const ForceReact = ({
         />
       )
   );
+
   return (
-    <svg height={canvasHeight} width={canvasWidth} ref={nodeMapRef}>
+    <svg
+      id="react-graph"
+      height={canvasHeight}
+      width={canvasWidth}
+      ref={nodeMapRef}
+    >
       <g>
         {nodeElement}
         {nodeLinks}

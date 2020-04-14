@@ -13,7 +13,6 @@ export const SimpleForceGraph = ({
   const getNodeColor = (node) => (node.level === 1 ? 'red' : 'gray');
 
   useEffect(() => {
-    // Simple bar graph.
     if (data && nodeMapRef.current) {
       // Create SVG element
 

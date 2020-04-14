@@ -14,7 +14,6 @@ export const ForceReact = ({
   const [linksState, setLinksState] = useState([...data.links]);
 
   useEffect(() => {
-    // Simple bar graph.
     if (data && nodeMapRef.current) {
       // simulation setup with all forces
       const linkForce = d3

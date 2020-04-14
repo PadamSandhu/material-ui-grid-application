@@ -26,6 +26,6 @@ export const data = {
     { target: 'elk', source: 'bee', strength: 0.1 },
     { target: 'dog', source: 'cat', strength: 0.1 },
     { target: 'fox', source: 'ant', strength: 0.1 },
-    { target: 'pike', source: 'dog', strength: 0.1 },
+    { target: 'pike', source: 'cat', strength: 0.1 },
   ],
 };

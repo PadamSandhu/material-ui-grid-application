@@ -1,11 +1,13 @@
 import React, { useEffect } from 'react';
 import Skeleton from '@material-ui/lab/Skeleton';
 import { ForceReact } from '../../components/D3';
+import { cloneDeep } from 'lodash';
 
 export const D3Graph = ({ chartData, fetchChartData }) => {
   useEffect(() => {
     fetchChartData();
   }, []);
+
   const width = 700;
   const height = 500;
 
@@ -21,7 +23,7 @@ export const D3Graph = ({ chartData, fetchChartData }) => {
         <ForceReact
           canvasWidth={width}
           canvasHeight={height}
-          data={chartData.chartData}
+          data={cloneDeep(chartData.chartData)}
         />
       ) : (
         <Skeleton variant="rect" width={700} height={500} />

@@ -1,6 +1,7 @@
 import * as Types from '../actions/types';
+import { fromJS } from 'immutable';
 
-const initialChartState = {
+const initialChartState = fromJS({
   chartData: {},
   error: {
     data: null,
@@ -8,7 +9,7 @@ const initialChartState = {
   },
   fetched: false,
   fetching: false,
-};
+});
 
 export const chartData = (state = { ...initialChartState }, action) => {
   switch (action.type) {

@@ -1,6 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react';
-import Draggable from 'react-draggable';
-
+import AppleIcon from '@material-ui/icons/Apple';
 import { data as defaultData } from './data';
 
 import * as d3 from 'd3';
@@ -15,8 +14,6 @@ export const ForceReact = ({
   const { links, nodes } = data; // Destructuring
   const [nodesState, setNodesState] = useState([...data.nodes]);
   const [linksState, setLinksState] = useState([...data.links]);
-
-  const [dragging, setDragging] = useState(false);
 
   const linkForce = d3
     .forceLink()
@@ -80,6 +77,14 @@ export const ForceReact = ({
             r={10}
             cx={node.x}
             cy={node.y}
+          />
+          <AppleIcon
+            node
+            width={20}
+            viewBox={'0 0 24 ' + canvasWidth}
+            x={node.x - 10}
+            y={node.y - 10}
+            color="secondary"
           />
           <text fontSize={15} x={node.x + 12} y={node.y + 5}>
             {node.label}

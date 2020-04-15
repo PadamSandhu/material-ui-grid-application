@@ -63,7 +63,7 @@ export const ForceReact = ({
         node.fy = null;
       });
     d3.select('#react-graph')
-      .selectAll('circle')
+      .selectAll('.React-Force-circle')
       .data(nodesState)
       .call(dragDrop);
   });
@@ -72,13 +72,14 @@ export const ForceReact = ({
     (node, id) =>
       node.x && (
         <g className="React-Force-chart-node" key={id}>
-          <circle
+          {/* <circle
             className="React-Force-circle"
             r={10}
             cx={node.x}
             cy={node.y}
-          />
+          /> */}
           <AppleIcon
+            className="React-Force-circle"
             node
             width={20}
             viewBox={'0 0 24 ' + canvasWidth}

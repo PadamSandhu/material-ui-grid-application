@@ -3,6 +3,7 @@ import { AppGrid } from '../components/sample-test-code/grid';
 import { CardPage } from '../components/paypal-example';
 import { D3Test1 } from '../components/D3/test/tes.t-1';
 import { SimpleForceGraph, ForceReact } from '../components/D3';
+import D3GraphContainer from '../containers/D3Graph';
 
 export const Routes = [
   {
@@ -30,6 +31,11 @@ export const Routes = [
     path: '/D3-simple-force-react',
     component: ForceReact,
     data: { title: 'D3 Simple Force React Graph' },
+  },
+  {
+    path: '/D3-simple-force-react-with-api',
+    component: D3GraphContainer,
+    data: { title: 'D3 Force Graph with API' },
   },
   {
     path: '',

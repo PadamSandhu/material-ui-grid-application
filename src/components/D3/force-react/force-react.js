@@ -15,25 +15,25 @@ export const ForceReact = ({
   const [nodesState, setNodesState] = useState([...data.nodes]);
   const [linksState, setLinksState] = useState([...data.links]);
 
-  const linkForce = d3
-    .forceLink()
-    .id(function (link) {
-      return link.id;
-    })
-    .strength(function (link) {
-      return link.strength;
-    });
-
-  const simulation = d3
-    .forceSimulation()
-    .force('link', linkForce)
-    .force('charge', d3.forceManyBody().strength(-120))
-    .force('center', d3.forceCenter(canvasWidth / 2, canvasHeight / 2));
+  const simulation = d3.forceSimulation();
 
   const simulationRef = useRef(simulation); // Create a ref
 
   useEffect(() => {
     if (data && nodeMapRef.current) {
+      const linkForce = d3
+        .forceLink()
+        .id(function (link) {
+          return link.id;
+        })
+        .strength(function (link) {
+          return link.strength;
+        });
+
+      simulationRef.current
+        .force('link', linkForce)
+        .force('charge', d3.forceManyBody().strength(-120))
+        .force('center', d3.forceCenter(canvasWidth / 2, canvasHeight / 2));
       simulationRef.current.nodes(nodes).on('tick', () => {
         setNodesState([...nodes]);
         setLinksState([...links]);
@@ -72,15 +72,8 @@ export const ForceReact = ({
     (node, id) =>
       node.x && (
         <g className="React-Force-chart-node" key={id}>
-          {/* <circle
-            className="React-Force-circle"
-            r={10}
-            cx={node.x}
-            cy={node.y}
-          /> */}
           <AppleIcon
             className="React-Force-circle"
-            node
             width={20}
             viewBox={'0 0 24 ' + canvasWidth}
             x={node.x - 10}

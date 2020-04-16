@@ -6,7 +6,7 @@ import * as d3 from 'd3';
 import './force-react.css';
 
 export const ForceReact = ({
-  canvasWidth = 700,
+  canvasWidth = 500,
   canvasHeight = 500,
   data = defaultData,
 }) => {
@@ -75,7 +75,7 @@ export const ForceReact = ({
           <AppleIcon
             className="React-Force-circle"
             width={20}
-            viewBox={'0 0 24 ' + canvasWidth}
+            viewBox={'0 0 100% 100%'}
             x={node.x - 10}
             y={node.y - 10}
             color="secondary"
@@ -111,8 +111,8 @@ export const ForceReact = ({
       ref={nodeMapRef}
     >
       <g>
-        {nodeElement}
         {nodeLinks}
+        {nodeElement}
       </g>
     </svg>
   );

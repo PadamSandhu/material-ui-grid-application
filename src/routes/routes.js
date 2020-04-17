@@ -5,6 +5,7 @@ import { D3Test1 } from '../components/D3/test/tes.t-1';
 import { SimpleForceGraph, ForceReact } from '../components/D3';
 import { ReactQueryEx } from '../components/ReactQuery';
 import D3GraphContainer from '../containers/D3Graph';
+import { FormValidator } from '../components/Form-Validator';
 
 export const Routes = [
   {
@@ -41,7 +42,12 @@ export const Routes = [
   {
     path: '/react-query',
     component: ReactQueryEx,
-    data: { title: 'Test React Query Builder' },
+    data: { title: 'React Query Builder' },
+  },
+  {
+    path: '/form-validator',
+    component: FormValidator,
+    data: { title: 'Form Validator' },
   },
   {
     path: '',

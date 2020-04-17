@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/material-ui-grid-application/static/css/main.05ac88b3.chunk.css",
-    "main.js": "/material-ui-grid-application/static/js/main.85b6f91d.chunk.js",
-    "main.js.map": "/material-ui-grid-application/static/js/main.85b6f91d.chunk.js.map",
+    "main.js": "/material-ui-grid-application/static/js/main.382fba3b.chunk.js",
+    "main.js.map": "/material-ui-grid-application/static/js/main.382fba3b.chunk.js.map",
     "runtime-main.js": "/material-ui-grid-application/static/js/runtime-main.ea1e8204.js",
     "runtime-main.js.map": "/material-ui-grid-application/static/js/runtime-main.ea1e8204.js.map",
     "static/css/2.0b96b018.chunk.css": "/material-ui-grid-application/static/css/2.0b96b018.chunk.css",
-    "static/js/2.a4795ace.chunk.js": "/material-ui-grid-application/static/js/2.a4795ace.chunk.js",
-    "static/js/2.a4795ace.chunk.js.map": "/material-ui-grid-application/static/js/2.a4795ace.chunk.js.map",
+    "static/js/2.4c569db0.chunk.js": "/material-ui-grid-application/static/js/2.4c569db0.chunk.js",
+    "static/js/2.4c569db0.chunk.js.map": "/material-ui-grid-application/static/js/2.4c569db0.chunk.js.map",
     "index.html": "/material-ui-grid-application/index.html",
-    "precache-manifest.b3d2e291ede7fa070e0f8662e8daf31c.js": "/material-ui-grid-application/precache-manifest.b3d2e291ede7fa070e0f8662e8daf31c.js",
+    "precache-manifest.e9a5a6fa0f5a33bbef334d325c177a41.js": "/material-ui-grid-application/precache-manifest.e9a5a6fa0f5a33bbef334d325c177a41.js",
     "service-worker.js": "/material-ui-grid-application/service-worker.js",
     "static/css/2.0b96b018.chunk.css.map": "/material-ui-grid-application/static/css/2.0b96b018.chunk.css.map",
     "static/css/main.05ac88b3.chunk.css.map": "/material-ui-grid-application/static/css/main.05ac88b3.chunk.css.map",
-    "static/js/2.a4795ace.chunk.js.LICENSE.txt": "/material-ui-grid-application/static/js/2.a4795ace.chunk.js.LICENSE.txt",
+    "static/js/2.4c569db0.chunk.js.LICENSE.txt": "/material-ui-grid-application/static/js/2.4c569db0.chunk.js.LICENSE.txt",
     "static/media/index.css": "/material-ui-grid-application/static/media/roboto-latin-900italic.ebf6d164.woff2"
   },
   "entrypoints": [
     "static/js/runtime-main.ea1e8204.js",
     "static/css/2.0b96b018.chunk.css",
-    "static/js/2.a4795ace.chunk.js",
+    "static/js/2.4c569db0.chunk.js",
     "static/css/main.05ac88b3.chunk.css",
-    "static/js/main.85b6f91d.chunk.js"
+    "static/js/main.382fba3b.chunk.js"
   ]
 }

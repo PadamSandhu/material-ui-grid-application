@@ -3,6 +3,7 @@ import { AppGrid } from '../components/sample-test-code/grid';
 import { CardPage } from '../components/paypal-example';
 import { D3Test1 } from '../components/D3/test/tes.t-1';
 import { SimpleForceGraph, ForceReact } from '../components/D3';
+import { ReactQueryEx } from '../components/ReactQuery';
 import D3GraphContainer from '../containers/D3Graph';
 
 export const Routes = [
@@ -38,10 +39,16 @@ export const Routes = [
     data: { title: 'D3 Force Graph with API' },
   },
   {
+    path: '/react-query',
+    component: ReactQueryEx,
+    data: { title: 'Test React Query Builder' },
+  },
+  {
     path: '',
     redirectTo: '/',
     pathMatch: 'full',
   },
+
   {
     path: '**',
     component: () => <div>404 Not found </div>,

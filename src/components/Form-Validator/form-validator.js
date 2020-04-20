@@ -63,7 +63,6 @@ const Form = (props) => {
           label="Name"
           value={name}
           onChange={change.bind(null, 'name')}
-          fullWidth
         />
         <TextField
           id="email"
@@ -71,7 +70,6 @@ const Form = (props) => {
           helperText={touched.email ? errors.email : ''}
           error={touched.email && Boolean(errors.email)}
           label="Email"
-          fullWidth
           value={email}
           onChange={change.bind(null, 'email')}
         />
@@ -81,7 +79,6 @@ const Form = (props) => {
           helperText={touched.password ? errors.password : ''}
           error={touched.password && Boolean(errors.password)}
           label="Password"
-          fullWidth
           type="password"
           value={password}
           onChange={change.bind(null, 'password')}
@@ -92,7 +89,6 @@ const Form = (props) => {
           helperText={touched.confirmPassword ? errors.confirmPassword : ''}
           error={touched.confirmPassword && Boolean(errors.confirmPassword)}
           label="Confirm Password"
-          fullWidth
           type="password"
           value={confirmPassword}
           onChange={change.bind(null, 'confirmPassword')}

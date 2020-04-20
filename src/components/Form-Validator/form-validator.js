@@ -40,6 +40,7 @@ const Form = (props) => {
     handleChange,
     isValid,
     setFieldTouched,
+    handleSubmit,
   } = props;
 
   const change = (name, e) => {
@@ -50,11 +51,7 @@ const Form = (props) => {
 
   return (
     <div className={classes.root}>
-      <form
-        onSubmit={() => {
-          alert('submitted');
-        }}
-      >
+      <form onSubmit={handleSubmit}>
         <TextField
           id="name"
           name="name"
@@ -93,13 +90,7 @@ const Form = (props) => {
           value={confirmPassword}
           onChange={change.bind(null, 'confirmPassword')}
         />
-        <Button
-          type="submit"
-          fullWidth
-          variant="raised"
-          color="primary"
-          disabled={!isValid}
-        >
+        <Button type="submit" fullWidth color="primary" disabled={!isValid}>
           Submit
         </Button>
       </form>
@@ -114,6 +105,7 @@ export const FormValidator = () => {
       render={(props) => <Form {...props} />}
       initialValues={values}
       validationSchema={validationSchema}
+      onSubmit={(data) => console.log(data)}
     />
   );
 };

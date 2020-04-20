@@ -102,10 +102,11 @@ export const FormValidator = () => {
   const values = { name: '', email: '', confirmPassword: '', password: '' };
   return (
     <Formik
-      render={(props) => <Form {...props} />}
       initialValues={values}
       validationSchema={validationSchema}
       onSubmit={(data) => console.log(data)}
-    />
+    >
+      {(props) => <Form {...props} />}
+    </Formik>
   );
 };
